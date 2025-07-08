@@ -1,15 +1,73 @@
-# React + Vite
+# ENTNT Dental Center Management - Admin Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Submission for ENTNT Frontend Developer (React) Assignment**  
+🗓️ Deadline: 8 July  
+🧑‍💻 Developer: Yash Kamal
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 📌 Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# entnt-dental-dashboard.
-# entnt-dental-dashboard.
-# entnt-dental-dashboard.
+This is a fully functional **frontend-only Dental Center Management Dashboard** built for ENTNT's technical assignment. It includes role-based login, localStorage data simulation, and views for both **Admins (Dentists)** and **Patients** — all without any backend or external APIs.
+
+
+
+## 🧠 Key Features
+
+### 🔐 Authentication (Simulated)
+- Hardcoded users stored in `localStorage`
+- Role-based redirection
+- Session saved in `localStorage`
+
+### 🧑‍⚕️ Admin Features
+- **Dashboard KPIs**: Patients, Revenue, Completed & Upcoming Appointments
+- **Patient Management**: Add, Edit, Delete
+- **Appointment (Incident) Management**: Including file upload & treatment info
+- **Calendar View** of appointments
+
+### 🙋‍♂️ Patient Features
+- View own profile & appointment history
+- See attached treatment files and costs
+
+### 💾 Data Simulation
+- All data stored in `localStorage`
+- Files uploaded as base64 URLs
+
+
+
+## 🔧 Tech Stack
+
+- **React.js** (Functional Components)
+- **React Router DOM** (v6+)
+- **Context API** (for Auth Management)
+- **TailwindCSS** (for styling)
+- **lucide-react** (icons)
+
+
+
+## 📂 Folder Structure
+src/
+├── components/ # Reusable UI components (ErrorBoundary, PrivateRoute)
+├── contexts/ # Auth Context API
+├── pages/ # Page components: Dashboard, Login, Patients, Calendar, etc.
+├── utils/ # Storage logic (localStorage functions)
+├── App.jsx # Main route config
+└── main.jsx # ReactDOM render & data init
+🧪 Test Credentials
+Admin:
+Email: admin@entnt.in
+Password: admin123
+
+Patient:
+Email: john@entnt.in
+Password: patient123
+
+💬 Technical Decisions
+Used localStorage to simulate backend workflows.
+
+Avoided any external libraries like Firebase or axios.
+
+Designed mobile-first responsive UI using Tailwind.
+
+Followed role-based access control using PrivateRoute.
+
