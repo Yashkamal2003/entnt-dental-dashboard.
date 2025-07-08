@@ -3,6 +3,8 @@
 🚀 **Submission for ENTNT Frontend Developer (React) Assignment**  
 🗓️ Deadline: 8 July  
 🧑‍💻 Developer: Yash Kamal
+website live link : https://lambent-platypus-497e2e.netlify.app/
+
 
 
 
